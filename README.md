@@ -25,3 +25,29 @@ machine-learning-fraud-detection/
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project documentation
 ```
+
+## Results
+
+### Logistic Regression
+
+| Metric | Class 0 (Non-Fraud) | Class 1 (Fraud) |
+|--------|---------------------|---------------------|
+| Precision | 1.0 | 0.87 |
+| Recall | 1.0 | 0.80 |
+| F1-Score | 1.0 | 0.84 |
+
+### XGBoost
+
+| Metric | Class 0 (Non-Fraud) | Class 1 (Fraud) |
+|--------|---------------------|---------------------|
+| Precision | 1.0 | 0.93 |
+| Recall | 1.0 | 0.82 |
+| F1-Score | 1.0 | 0.87 |
+
+Overall ROC-AUC Score:
+- Logistic Regression: 0.981
+- XGBoost: 0.965
+
+### Conclusion
+
+Despite the marginally lower ROC AUC, XGBoost is the better model for this task due to its stronger precision–recall balance, fewer false positives, and better detection of actual fraud cases.
