@@ -14,3 +14,14 @@ This project uses the publicly available [Credit Card Fraud Detection dataset fr
 - It includes 284,807 transactions, out of which only 492 are fraudulent, making it a highly imbalanced classification problem.
 - Features are numerical and result from a PCA transformation to protect sensitive information.
 - The target variable indicates whether a transaction is fraudulent (`1`) or legitimate (`0`).
+
+## Project Structure
+
+```
+machine-learning-fraud-detection/
+├── data/                       # Directory for storing the creditcard dataset
+├── notebooks/                  # Jupyter notebooks for analysis and experiments
+├── final_model_training.py     # Production-ready model training code
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project documentation
+```
